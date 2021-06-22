@@ -1,52 +1,37 @@
 #include <iostream>
+#include <string.h>
 using namespace std;
 
-class Transaction{
-private:
-  string tx_id;
-  string acc_name;
-  float tx_amt;
-
-public:
-  Transaction()
-  {
-    this->tx_id = "UNKNOWN";
-    this->tx_amt = -1;
-    this->acc_name = "UNKONWN";
-  }
-  void dynamic_initilization(){
-    cout<<"\nEnter transaction id: "; getline(cin, tx_id);
-    cout<<"Enter Account Holder Name: "; getline(cin, acc_name);
-    cout<<"Enter Transaction Amount: "; cin>>tx_amt;
-  }
-  void display_tx_details()
-  {
-    cout << "\ntx_id: " << tx_id << endl;
-    cout << "Accout Name: " << acc_name << endl;
-    cout << "Rs. " << tx_amt<<endl;
-  }
+class String{
+    int length;
+    char *name;
+  public:
+    String(char* ch){
+      length = strlen(ch);
+      name = new char[length];
+      name = ch;
+    }
+    void join(char* b){
+      length += strlen(b);
+      char *a = name;
+      name = new char[length];
+      strcpy(name, a);
+      strcat(name, b);
+    }
+    void get_length(){
+      cout<<"length: "<<length<<endl;
+    }
+    void display(){
+      cout<<name<<endl;
+    }
 };
 
 int main(){
-  Transaction tx;
-  tx.display_tx_details();
-  tx.dynamic_initilization();
-  tx.display_tx_details();
-  return 0;
+  String name("Danish");
+  name.display();
+  name.get_length();
+
+  name.join(" Ansari");
+  name.display();
+  name.get_length();
 }
-
-/*output:
-
-tx_id: UNKNOWN
-Accout Name: UNKONWN
-Rs. -1
-
-Enter transaction id: TX0909
-Enter Account Holder Name: Danish Ansari
-Enter Transaction Amount: 40000
-
-TX0909 
-Accout Name: Danish Ansari
-Rs. 40000
-
-*/
