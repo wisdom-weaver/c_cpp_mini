@@ -1,8 +1,8 @@
 {
   "code-runner.executorMap": {
 
-    "c":"rm -rf $workspaceRoot/execs; mkdir $workspaceRoot/execs; cd $dir && gcc $fileName -o $workspaceRoot/execs/$fileNameWithoutExt -lm && $workspaceRoot/execs/$fileNameWithoutExt && rm -rf $workspaceRoot/execs && echo \n\n",
-    "cpp":"rm -rf $workspaceRoot/execs; mkdir $workspaceRoot/execs; cd $dir && g++ $fileName -o $workspaceRoot/execs/$fileNameWithoutExt && $workspaceRoot/execs/$fileNameWithoutExt && rm -rf $workspaceRoot/execs && echo \n\n",
+    "c":"rm -rf $workspaceRoot/execs; mkdir $workspaceRoot/execs; cd $dir && gcc $fileName -o $workspaceRoot/execs/$fileNameWithoutExt -lm && $workspaceRoot/execs/$fileNameWithoutExt; rm -rf $workspaceRoot/execs && echo \n\n",
+    "cpp":"rm -rf $workspaceRoot/execs; mkdir $workspaceRoot/execs; cd $dir && g++ $fileName -o $workspaceRoot/execs/$fileNameWithoutExt && $workspaceRoot/execs/$fileNameWithoutExt; rm -rf $workspaceRoot/execs && echo \n\n",
     // "c":"cd $dir && mkdir -p execs && gcc $fileName -o $fileNameWithoutExt -lm; mv $fileNameWithoutExt $dir/execs && cd $dir && ./execs/$fileNameWithoutExt",
     // "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
     // "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
@@ -58,6 +58,9 @@
   "files.associations": {
     "*.tcc": "cpp",
     "optional": "cpp",
-    "type_traits": "cpp"
+    "type_traits": "cpp",
+    "ostream": "cpp",
+    "typeinfo": "cpp",
+    "random": "cpp"
   }
 }

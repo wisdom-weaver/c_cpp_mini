@@ -1,4 +1,1 @@
-
-      mx = ar[i];
-      len++;
-    
+cin>>ar[i][j];
