@@ -61,6 +61,8 @@
     "type_traits": "cpp",
     "ostream": "cpp",
     "typeinfo": "cpp",
-    "random": "cpp"
+    "random": "cpp",
+    "queue": "c",
+    "valarray": "cpp"
   }
 }
