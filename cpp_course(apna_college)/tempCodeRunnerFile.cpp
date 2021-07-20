@@ -1,1 +1,1 @@
-cin>>ar[i][j];
+tolower
