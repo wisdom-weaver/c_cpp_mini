@@ -1,6 +1,6 @@
-for (int i = n - 1; i >= 0; i--)
-  // {
-  //   int num = arr[i];
-  //   int pos = --c_ar[num];
-  //   arr[pos] = num;
-  // }
+insert_at_tail(head, 1);
+  insert_at_tail(head, 2);
+  insert_at_tail(head, 3);
+  insert_at_tail(head, 4);
+  insert_at_tail(head, 5);
+  insert_at_tail(head, 6);
