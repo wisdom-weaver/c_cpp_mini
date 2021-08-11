@@ -1,3 +1,1 @@
-cout << st.peek() << endl;
-    st.pop();
-  
+min(a[st.top()], a[i]) - a[cur]
