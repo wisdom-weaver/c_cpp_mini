@@ -1,1 +1,2 @@
-min(a[st.top()], a[i]) - a[cur]
+for(int i=1; i<v.size(); i++)
+    insert_BST(root, v[i]);
