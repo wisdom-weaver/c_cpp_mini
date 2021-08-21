@@ -63,6 +63,7 @@
     "typeinfo": "cpp",
     "random": "cpp",
     "queue": "c",
-    "valarray": "cpp"
+    "valarray": "cpp",
+    "iostream": "cpp"
   }
 }
